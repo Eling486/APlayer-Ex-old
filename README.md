@@ -4,13 +4,15 @@
 
 ## New Mode(s)
 
-### fixedBar mode
+### fixedBar mode - 吸底播放栏模式
 
 APlayer can be fixed to page bottom via fixedBar mode, fixedBar mode is very different from fixed mode, enjoy it!
 
-screenshot:
-<img src="https://wx2.sinaimg.cn/mw690/c7f4b640gy1gp8nt6di38j20ol053dfy.jpg" width="100%">
+APlayer 可以通过吸底播放栏模式固定在页面底部，并且这种模式跟吸底模式有很大不同。
 
+screenshot:
+<img src="https://wx2.sinaimg.cn/large/c7f4b640gy1gp8nt6di38j20ol053dfy.jpg" width="100%">
+<img src="https://wx3.sinaimg.cn/large/c7f4b640gy1gp8ntfr10tj20ol06ydg3.jpg" width="100%">
 ```
 const ap = new APlayer({
     container: document.getElementById('player'),
@@ -23,6 +25,63 @@ const ap = new APlayer({
     }]
 });
 ```
+
+## New Function
+
+### defaultTitle & defaultCover - 默认封面&标题
+
+You can set the default title & cover now.
+
+你现在可以设置默认的封面及标题了！
+
+
+such as:
+
+<img src="https://wx2.sinaimg.cn/large/c7f4b640gy1gp8ntb8avuj20ol04ggln.jpg" width="100%">
+
+```
+const ap = new APlayer({
+    container: document.getElementById('player'),
+    defaultTitle: 'Your Title',
+    defaultCover: 'Your Image',
+});
+```
+
+### storeList - 保存播放列表到localStorage
+
+Setting `storeList` to save your play list to localStorage.
+
+ONLY recommended in the fixedBar mode!
+
+It is recommended to set `storagename` at the same time to avoid conflicts with other APlayers.
+
+
+设置`storeList`参数为`true`来让播放器保存播放列表到localStorage
+
+只在fixedBar（吸底播放栏）模式下推荐使用（因为其他模式下没有清空播放列表按钮）
+
+推荐同时设置`storageName`来避免与其他播放器冲突
+
+
+```
+const ap = new APlayer({
+    container: document.getElementById('player'),
+    fixedBar: true,
+    storageName: 'my-aplayer',
+    storeList: true,
+    audio: [{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+```
+
+
+---
+
+
 # Original APlayer
 
 <p align="center">

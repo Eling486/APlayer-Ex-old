@@ -160,13 +160,13 @@
     <div class="aplayer-pic" style="{{ if cover  }}background-image: url(&quot;{{ cover }}&quot;);{{ else if options.defaultCover }}background-image: url(&quot;{{ options.defaultCover }}&quot;);{{ /if }}background-color: {{ options.theme }};">
         <div class="aplayer-button aplayer-play">{{@ icons.play }}</div>
     </div>
+    <div class="aplayer-lrc">
+        <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);"></div>
+    </div>
     <div class="aplayer-info">
         <div class="aplayer-music">
             <span class="aplayer-title">{{ options.defaultTitle }}</span>
             <span class="aplayer-author"></span>
-        </div>
-        <div class="aplayer-lrc">
-            <div class="aplayer-lrc-contents" style="transform: translateY(0); -webkit-transform: translateY(0);"></div>
         </div>
         <div class="aplayer-controller">
             <div class="aplayer-bar-wrap">

@@ -1,4 +1,5 @@
 node_modules
 /dist/index.html
+/dist/assets/
 npm-debug.log
 dist/debug.log

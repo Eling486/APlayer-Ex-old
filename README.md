@@ -8,7 +8,21 @@
 
 APlayer can be fixed to page bottom via fixedBar mode, fixedBar mode is very different from fixed mode, enjoy it!
 
+screenshot:
+<img src="https://wx2.sinaimg.cn/mw690/c7f4b640gy1gp8nt6di38j20ol053dfy.jpg" width="100%">
 
+```
+const ap = new APlayer({
+    container: document.getElementById('player'),
+    fixedBar: true,
+    audio: [{
+        name: 'name',
+        artist: 'artist',
+        url: 'url.mp3',
+        cover: 'cover.jpg',
+    }]
+});
+```
 # Original APlayer
 
 <p align="center">

@@ -108,7 +108,6 @@ class APlayer {
             if(listStorage){
                 this.list.clear()
                 if(listStorage.length > 0){
-                    console.log(listStorage)
                     this.list.add(listStorage)
                     this.list.switch(listIndex)
                 }
